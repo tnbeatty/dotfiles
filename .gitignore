@@ -1,4 +1,19 @@
 # System Files
 .DS_Store
 [iI]con
+Desktop.ini
+
+# Tmp / Cache Files
+*.swp
+._*
+Thumbs.db
+
+# External Disk Files
+.Spotlight-V100
+.Trashes
+
+# Private Stuff (Secrets)
+.extras
+.ssh
+archive
 

@@ -19,6 +19,8 @@ Inspired by (and thanks to):
 Todo:
 -----
 
-- [ ] Include a [.macos defaults](https://mths.be/macos) setup
+- [X] Solarized theme support
+- [ ] Complete [.macos defaults](https://mths.be/macos) setup
 - [ ] Migrate brew installs to a [brewfile](https://github.com/driesvints/dotfiles/blob/master/install.sh)
+
   

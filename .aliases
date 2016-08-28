@@ -9,11 +9,12 @@ alias -- -="cd -"
 
 # Shortcuts / Abbreviations
 alias dv="cd ~/Developer"
-alias dbc="cd ~/Developer/batcave"
 alias g="git"
+alias gs="git status"
 alias h="history"
-alias tnb="cd ~/Developer/batcave/tnbeatty"
+alias bat="cd ~/Developer/batcave"
 alias iris="cd ~/Developer/Iris"
+alias tnb="cd ~/Developer/batcave/tnbeatty"
 
 # Add some color to the lists
 if ls --color > /dev/null 2>&1; then # GNU `ls`

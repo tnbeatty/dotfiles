@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Ensure brew is installed
+
+if ! which brew > /dev/null; then
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 # Install favorite packages using homebrew
 
 # Ensure brew is up to date

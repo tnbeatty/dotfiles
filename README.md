@@ -14,14 +14,16 @@ Installing
 5. Edit the `.extra` file appropriately
 6. Set up sensible mac defaults with `.macos`
 
-	> git clone git@github.com:tnbeatty/dotfiles.git && cd dotfiles
-	> ./brew.sh
-	> ./.vim/install-plugins.sh
-	> ./bootstrap.sh
-	> cd
-	> cp /path/to/your/keys ~/.ssh/
-	> vim .extra
-	> ./.macos
+```bash
+> git clone git@github.com:tnbeatty/dotfiles.git && cd dotfiles
+> ./brew.sh
+> ./.vim/install-plugins.sh
+> ./bootstrap.sh
+> cd
+> cp /path/to/your/keys ~/.ssh/
+> vim .extra
+> ./.macos
+```
 
 For optional dependencies, there are a set of installer scripts automatically appended to the path. They are all prefixed with `install-` and located in the `bin` directory.
 

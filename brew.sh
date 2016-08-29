@@ -15,7 +15,8 @@ brew update
 brew upgrade --all
 
 # Install updated versions of mac tools
-brew install vim --override-system-vi
+brew install luajit
+brew install vim --override-system-vi --with-luajit
 brew install homebrew/dupes/grep
 
 # Install languages
@@ -29,6 +30,7 @@ brew install go
 # install other useful binaries
 brew install ack
 brew install ansible
+brew install ctags
 brew install dark-mode
 brew install git
 brew install git-lfs

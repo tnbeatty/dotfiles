@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# Make all of my favorite directories
+mkdir -p ~/Developer/batcave/tnbeatty
+mkdir -p ~/Developer/go
+
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;

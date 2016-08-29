@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Install golang tools. Must have a gopath set
+
+# goimports
+go get -u golang.org/x/tools/cmd/goimports
+
+# gocode
+go get -u github.com/nsf/gocode
+
+# gotags
+go get -u github.com/jstemmer/gotags
+
+# godef
+go get -u github.com/rogpeppe/godef
+
+# golint
+go get -u github.com/golang/lint/golint
+
+# errcheck
+go get -u github.com/kisielk/errcheck
+
+# oracle
+go get -u golang.org/x/tools/cmd/oracle
+

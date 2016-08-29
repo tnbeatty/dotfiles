@@ -11,6 +11,8 @@
 	ZEFyY2hpdmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhPXGJkZpabpq+3usPV2N0AAAAAAAAB
 	AQAAAAAAAAAZAAAAAAAAAAAAAAAAAAAA3w==
 	</data>
+	<key>useOptionAsMetaKey</key>
+	<true/>
 	<key>BlinkText</key>
 	<false/>
 	<key>CursorColor</key>

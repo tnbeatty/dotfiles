@@ -1,0 +1,5 @@
+# Allow for ctl-r search up and ctl-s search down
+[[ $- == *i* ]] && stty -ixon
+
+# Load dvm support
+[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"

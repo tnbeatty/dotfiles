@@ -16,7 +16,7 @@ function syncIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE.txt" \
 		--exclude "archive" \
-		-avh --no-perms . ~;
+		-avh --no-perms . ~;s 
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

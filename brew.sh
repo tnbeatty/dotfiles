@@ -32,6 +32,7 @@ brew install ack
 brew install ansible
 brew install ctags
 brew install dark-mode
+brew install dvm
 brew install git
 brew install git-lfs
 brew install imagemagick

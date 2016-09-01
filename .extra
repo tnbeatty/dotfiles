@@ -1,0 +1,13 @@
+# Extra (machine-specific) stuff
+# 
+# You can recreate this file, or customize it for your machine using all of my
+# functions and exports by altering the variables right at the top
+
+do_api_key=<>
+
+## Exports
+
+export DIGITALOCEAN_TOKEN=do_api_key
+export DO_API_TOKEN=$DIGITALOCEAN_TOKEN
+
+## Aliases

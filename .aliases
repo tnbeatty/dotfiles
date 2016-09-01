@@ -41,3 +41,7 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Alert w/ terminal noise and badge
 alias alert="tput bel"
+
+# Add all keys in ~/.ssh
+alias ssh-addall='ssh-add $(ls -1 ~/.ssh/*id_rsa | grep -v .pub)'
+

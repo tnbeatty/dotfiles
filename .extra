@@ -7,7 +7,7 @@ do_api_key=<>
 
 ## Exports
 
-export DIGITALOCEAN_TOKEN=do_api_key
+export DIGITALOCEAN_TOKEN=$do_api_key
 export DO_API_TOKEN=$DIGITALOCEAN_TOKEN
 
 ## Aliases

@@ -45,3 +45,6 @@ alias alert="tput bel"
 # Add all keys in ~/.ssh
 alias ssh-addall='ssh-add $(ls -1 ~/.ssh/*id_rsa | grep -v .pub)'
 
+# Docker shortcuts
+alias dsa='docker stop $(docker ps -a -q)'
+alias drma='docker rm $(docker ps -a -q)'

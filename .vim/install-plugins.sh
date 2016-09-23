@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
 cd "$(dirname "${BASH_SOURCE}")";
+mkdir -p bundle;
 cd "bundle";
+
+echo "Installing directories in:"
+pwd
 
 # Fugitive (git defaults)
 git clone https://github.com/tpope/vim-fugitive.git

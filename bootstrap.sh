@@ -17,6 +17,7 @@ function syncIt() {
 		--exclude "LICENSE.txt" \
 		--exclude "archive" \
 		-avh --no-perms . ~;
+	/bin/bash ~/.vim/install-plugins.sh
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then

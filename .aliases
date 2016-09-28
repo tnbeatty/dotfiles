@@ -13,7 +13,7 @@ alias g="git"
 alias gs="git status"
 alias h="history"
 alias bat="cd ~/Developer/batcave"
-alias iris="cd ~/Developer/Iris"
+alias iris="cd ~/Developer/iris"
 alias tnb="cd ~/Developer/batcave/tnbeatty"
 
 # Add some color to the lists

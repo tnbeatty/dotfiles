@@ -9,3 +9,10 @@ export PATH=$PATH:$GOPATH/bin
 
 # Enable brew installs in sbin
 export PATH="/usr/local/sbin:$PATH"
+
+# Specific brew package variables
+# -------------------------------
+
+# nvm - node version manager
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"

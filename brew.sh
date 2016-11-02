@@ -45,6 +45,7 @@ brew install nvm
 brew install python
 brew install rabbitmq
 brew install redis
+brew install reattach-to-user-namespace
 brew install sqlite
 brew install terraform
 brew install tmux

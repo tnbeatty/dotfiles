@@ -3,7 +3,7 @@
 # You can recreate this file, or customize it for your machine using all of my
 # functions and exports by altering the variables right at the top
 
-do_api_key=<>
+do_api_key=fillinhere
 
 ## Exports
 

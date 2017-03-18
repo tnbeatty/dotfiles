@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Make all of my favorite directories
-mkdir -p ~/Developer/batcave/tnbeatty
+mkdir -p ~/Developer/tnbeatty
+mkdir -p ~/Developer/irisvr
 mkdir -p ~/Developer/go
 
 cd "$(dirname "${BASH_SOURCE}")";
@@ -30,3 +31,15 @@ else
 	fi;
 fi;
 unset syncIt;
+
+
+## OSX SPECIFIC
+
+if [ "$OSTYPE" == "linux-gnu" ]; then
+
+	# Linux-Specific Code Here
+	echo "Installing linux packages"
+	
+elif [ "$OSTYPE" == "darwin"* ]; then
+	/bin/bash ./brew.sh
+fi;

@@ -1,5 +1,16 @@
 # Allow for ctl-r search up and ctl-s search down
 [[ $- == *i* ]] && stty -ixon
 
-# Load dvm support
-[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
+
+## OS SPECIFIC
+
+if [ "$OSTYPE" == "linux-gnu" ]; then
+
+	# Linux-Specific Code Here
+	
+elif [ "$OSTYPE" == "darwin"* ]; then
+
+	# Load dvm support
+	[[ -s "$(brew --prefix dvm)/dvm.sh" ]] && source "$(brew --prefix dvm)/dvm.sh"
+
+fi;	

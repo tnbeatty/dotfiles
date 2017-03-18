@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+# .exports
+#
+# Export environment variables loaded into every terminal session.
+# 
+
 # Make vim the default editor
 export EDITOR='vim';
 
@@ -7,12 +12,23 @@ export EDITOR='vim';
 export GOPATH=$HOME/Developer/go
 export PATH=$PATH:$GOPATH/bin
 
-# Enable brew installs in sbin
-export PATH="/usr/local/sbin:$PATH"
 
-# Specific brew package variables
-# -------------------------------
+## OSX SPECIFIC
 
-# nvm - node version manager
-export NVM_DIR="$HOME/.nvm"
-. "$(brew --prefix nvm)/nvm.sh"
+if [ "$OSTYPE" == "linux-gnu" ]; then
+
+	# Linux-Specific Code Here
+	
+elif [ "$OSTYPE" == "darwin"* ]; then
+	
+	# Enable brew installs in sbin
+	export PATH="/usr/local/sbin:$PATH"
+
+	# Specific brew package variables
+	# -------------------------------
+
+	# nvm - node version manager
+	export NVM_DIR="$HOME/.nvm"
+	. "$(brew --prefix nvm)/nvm.sh"
+
+fi;

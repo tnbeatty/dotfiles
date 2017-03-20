@@ -6,7 +6,7 @@
 
 if [ "$OSTYPE" == "linux-gnu" ]; then
 
-	# Linux-Specific Code Here
+	echo "No functions to add here..."
 	
 elif [ "$OSTYPE" == "darwin"* ]; then
 

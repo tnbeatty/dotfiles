@@ -18,6 +18,7 @@ export PATH=$PATH:$GOPATH/bin
 if [ "$OSTYPE" == "linux-gnu" ]; then
 
 	# Linux-Specific Code Here
+	export PATH="$PATH"
 	
 elif [ "$OSTYPE" == "darwin"* ]; then
 	

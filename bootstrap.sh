@@ -9,6 +9,15 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
 
+
+# Remove pre-existing files from the system (mostly VIM settings) that would
+# interfere with our ability to install new ones
+function cleanUp() {
+	rm -rf "$HOME/.vim/bundle"
+}
+
+# Sync repo files to get them in the right place in the home directory on our
+# system
 function syncIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
@@ -21,7 +30,9 @@ function syncIt() {
 	/bin/bash ~/.vim/install-plugins.sh
 }
 
+
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
+	cleanUp;
 	syncIt;
 else
 	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
@@ -31,6 +42,7 @@ else
 	fi;
 fi;
 unset syncIt;
+unset cleanUp;
 
 
 ## OSX SPECIFIC

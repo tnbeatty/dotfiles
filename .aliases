@@ -28,7 +28,7 @@ fi
 
 # List all files in colorized format
 alias l="ls -lF ${colorflag}"
-alias la="ls -laF ${colorflag}"
+alias la="ls -lahF ${colorflag} --group-directories-first"
 
 # Enable aliases to be sudo’ed
 alias sudo='sudo '

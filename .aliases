@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+if [ "$OSTYPE" == "linux-gnu" ]; then
+
+	# Linux-Specific Aliases Here
+	alias open="nautilus $1"
+	
+elif [ "$OSTYPE" == "darwin"* ]; then
+	# Mac-Specific Aliases Here
+fi;
+
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
@@ -12,9 +21,9 @@ alias dv="cd ~/Developer"
 alias g="git"
 alias gs="git status"
 alias h="history"
-alias bat="cd ~/Developer/batcave"
-alias iris="cd ~/Developer/iris"
-alias tnb="cd ~/Developer/batcave/tnbeatty"
+# alias bat="cd ~/Developer/batcave" ## TODO: Let the user decide which subdirs to create
+alias iris="cd ~/Developer/irisvr"
+alias tnb="cd ~/Developer/tnbeatty"
 
 # Add some color to the lists
 if ls --color > /dev/null 2>&1; then # GNU `ls`

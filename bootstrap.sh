@@ -3,11 +3,11 @@
 # Make all of my favorite directories
 mkdir -p ~/Developer/tnbeatty
 mkdir -p ~/Developer/irisvr
-mkdir -p ~/Developer/go
+mkdir -p ~/Developer/other
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
+# git pull origin master;
 
 
 # Remove pre-existing files from the system (mostly VIM settings) that would

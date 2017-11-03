@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# TODO:
+# - Alias "open" for "nautilus" on ubuntu
+
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."

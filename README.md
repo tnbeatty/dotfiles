@@ -14,6 +14,9 @@ Installing
 4. Place shared SSH keys in `~/.ssh`
 5. Edit the `.extra` file appropriately
 6. (Optional) Set up sensible mac defaults with `.macos`
+7. (Optional) Set Ubuntu terminal colors to:
+  * Default Text:        #EEEEEC
+  * Default Background:  #1C1C1C
 
 ```bash
 > git clone git@github.com:tnbeatty/dotfiles.git && cd dotfiles

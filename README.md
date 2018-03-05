@@ -33,6 +33,13 @@ For optional dependencies, there are a set of installer scripts automatically ap
 	> install-go-tools
 
 
+Adding Tools
+------------
+
+### VIM
+
+Edit the top of `.vim/install-plugins.sh` to add or remove vim packages that will be set up using Pathogen. The installer script is automatically called by the bootstrap script and should work cross platform.
+
 The Standard TNB Toolbox
 ------------------------
 
@@ -54,7 +61,7 @@ Todo:
 - [X] Solarized theme support
 - [X] Complete [.macos defaults](https://mths.be/macos) setup
 - [X] Use [Pathogen](https://github.com/tpope/vim-pathogen) for VIM plugins
-- [ ] Ubuntu / Linux support
+- [x] Ubuntu / Linux support
 - [ ] Migrate brew installs to a [brewfile](https://github.com/driesvints/dotfiles/blob/master/install.sh)
 - [ ] Automate Sublime install and config
 - [ ] Add better support for golang to Vim

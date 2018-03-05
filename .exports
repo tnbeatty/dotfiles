@@ -10,7 +10,7 @@ export EDITOR='vim';
 
 # Set up gopaths (make sure you've run bootstrap first)
 export GOPATH=$HOME/Developer/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
 
 
 ## OSX SPECIFIC

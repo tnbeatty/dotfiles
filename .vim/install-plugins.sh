@@ -19,6 +19,7 @@ repos=(
 	tpope/vim-fugitive
 	itchyny/lightline.vim
 	tomasr/molokai
+	fatih/vim-go
 
 )
 

@@ -34,15 +34,24 @@ For optional dependencies, there are a set of installer scripts automatically ap
 
 ### Manual Stuff
 
-Install Dropbox and log in (should require 2FA). We'll use dropbox to sync a bunch of application settings between machines.
+1. Open up Sublime Text and install the package manager.
 
-To sync sublime text settings, remove the default user folder and symlink the sync'd dropbox folder.
+2. Install Dropbox and log in (should require 2FA). We'll use dropbox to sync a bunch of application settings between machines.
+
+3. To sync sublime text settings, remove the default user folder and symlink the sync'd dropbox folder.
 
 ```
 cd ~/.config/sublime-text-3/Packages
 rm -r User
 ln -s ~/Dropbox/Shared/Sublime/User
 ```
+
+4. Make sure VIM is set up and dependencies are installed. Open up VIM and run
+
+```
+:GoInstallBinaries
+```
+
 
 _Note: On Mac, sublime package config (first line in code above) is in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`_
 

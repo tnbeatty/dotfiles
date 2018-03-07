@@ -16,11 +16,21 @@ sudo apt-get -y install exfat-utils exfat-fuse
 
 # Install common tools
 sudo apt-get -y install curl \
-				vim;
+				vim tree;
 # Install common dependencies
 sudo apt-get -y install apt-transport-https \
 				ca-certificates \
 				software-properties-common;
+
+# Install language support
+
+## TODO Python
+
+## Golang
+
+curl -O https://dl.google.com/go/go1.10.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.10.linux-amd64.tar.gz
+rm go1.10.linux-amd64.tar.gz
 
 # Install applications via apt
 

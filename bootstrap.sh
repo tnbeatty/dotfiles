@@ -4,6 +4,7 @@
 mkdir -p ~/Developer/tnbeatty
 mkdir -p ~/Developer/irisvr
 mkdir -p ~/Developer/other
+mkdir -p ~/Developer/go # for golang projects
 
 cd "$(dirname "${BASH_SOURCE}")";
 

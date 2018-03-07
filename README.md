@@ -32,8 +32,21 @@ For optional dependencies, there are a set of installer scripts automatically ap
 
 	> install-go-tools
 
+### Manual Stuff
 
-Adding Tools
+Install Dropbox and log in (should require 2FA). We'll use dropbox to sync a bunch of application settings between machines.
+
+To sync sublime text settings, remove the default user folder and symlink the sync'd dropbox folder.
+
+```
+cd ~/.config/sublime-text-3/Packages
+rm -r User
+ln -s ~/Dropbox/Shared/Sublime/User
+```
+
+_Note: On Mac, sublime package config (first line in code above) is in `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/`_
+
+Adding New Tools
 ------------
 
 ### VIM
